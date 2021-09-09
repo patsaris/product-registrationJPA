@@ -1,0 +1,31 @@
+<web-app>
+
+  <welcome-file-list>
+          <welcome-file>productregister.jsp</welcome-file>
+  </welcome-file-list>
+
+  <request-character-encoding>UTF-8</request-character-encoding>
+
+  <servlet>
+    <servlet-name>ProductController</servlet-name>
+    <servlet-class>web.ProductController</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>ReadProducts</servlet-name>
+    <servlet-class>web.ReadProducts</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>ProductController</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ReadProducts</servlet-name>
+    <url-pattern>/read</url-pattern>
+  </servlet-mapping>
+
+</web-app>
